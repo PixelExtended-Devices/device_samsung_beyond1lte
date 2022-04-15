@@ -34,6 +34,10 @@ TARGET_HAVE_FOD := true
 TARGET_SUPPORTS_QUICK_TAP := true
 TARGET_FACE_UNLOCK_SUPPORTED := true
 
+## PixelExtended Official Stuff
+PEX_BUILD_TYPE := OFFICIAL
+PEX_MAINTAINER := Jubscleisson
+
 ## Inherit some common PixelExtended stuff
 $(call inherit-product, vendor/aosp/config/common_full_phone.mk)
 
