@@ -21,9 +21,6 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 ## Product API level
 $(call inherit-product, $(SRC_TARGET_DIR)/product/product_launched_with_p.mk)
 
-## Inscreen Fingerprint HAL
-TARGET_HAVE_FOD := true
-
 ## Inherit from beyond1lte device
 $(call inherit-product, device/samsung/beyond1lte/device.mk)
 
@@ -31,6 +28,10 @@ $(call inherit-product, device/samsung/beyond1lte/device.mk)
 TARGET_BOOTANIMATION_HALF_RES := true
 TARGET_SCREEN_HEIGHT := 3040
 TARGET_SCREEN_WIDTH := 1440
+
+## Flags
+TARGET_HAVE_FOD := true
+TARGET_SUPPORTS_QUICK_TAP := true
 
 ## Inherit some common PixelExtended stuff
 $(call inherit-product, vendor/aosp/config/common_full_phone.mk)
