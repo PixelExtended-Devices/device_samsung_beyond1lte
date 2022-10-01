@@ -32,15 +32,16 @@ $(call inherit-product, device/samsung/beyond1lte/device.mk)
 TARGET_BOOTANIMATION_HALF_RES := true
 TARGET_SCREEN_HEIGHT := 3040
 TARGET_SCREEN_WIDTH := 1440
+TARGET_BOOT_ANIMATION_RES := 1440
 
-## Inherit some common Lineage stuff
-$(call inherit-product, vendor/lineage/config/common_full_phone.mk)
+## Inherit some common build stuff
+$(call inherit-product, vendor/aosp/config/common_full_phone.mk)
 
 ## Enable updating of APEXes
 $(call inherit-product, $(SRC_TARGET_DIR)/product/updatable_apex.mk)
 
 ## Device identifier, this must come after all inclusions
-PRODUCT_NAME := lineage_beyond1lte
+PRODUCT_NAME := aosp_beyond1lte
 PRODUCT_DEVICE := beyond1lte
 PRODUCT_BRAND := samsung
 PRODUCT_MODEL := SM-G973F
