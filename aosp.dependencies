@@ -1,6 +1,14 @@
 [
-    {
-        "repository": "android_device_samsung_exynos9820-common",
-        "target_path": "device/samsung/exynos9820-common"
-    }
+  {
+    "remote": "pixelextended-devices",
+    "repository": "vendor_samsung_beyond1lte",
+    "target_path": "vendor/samsung/beyond1lte",
+    "branch": "trece"
+  },
+  {
+    "remote": "pixelextended-devices",
+    "repository": "device_samsung_exynos9820-common",
+    "target_path": "device/samsung/exynos9820-common",
+    "branch": "trece"
+  }
 ]
